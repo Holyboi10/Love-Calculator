@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class="content">
+        <h1>Love Calculator</h1><br>
+        <input type="text" placeholder="enter male name" id="male"><br><br>
+        <input type="text" placeholder="enter female name" id="female"><br><br>
+        <button onclick="calculate()">Calculate Love %</button><br>
+        <h2 id="result" style="color: white;"></h2>
+        </div>
+        
+
+    </div>
+
+
+    <script>
+        function calculate(){
+            var a=document.getElementById("male").value 
+            var b= document.getElementById("female").value
+            var c=Math.round(Math.random()*100)
+           document.getElementById("result").innerHTML=`the love percentage between <br/> ${a} & ${b} is <br/>  ${c} %`
+        }
+        
+
+    </script>
+    
+</body>
+</html>
